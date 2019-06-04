@@ -1,0 +1,99 @@
+body {
+  font-family: 'Roboto Condensed', sans-serif;
+  background-image: url(./фоон.jpg);
+  /* background-position: center center; */
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+footer {
+  background-color: black;
+  color: white;
+  padding: 30px;
+  text-align: center;
+}
+.img-hotel {
+  width: 200px;
+}
+.wave-block {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+  border: 1px solid gray;
+}
+.hotels-offers {
+  width: 60%;
+}
+.preferences {
+  height: 300px;
+  width: 30%;
+  border: 2px solid #f4a742;
+  border-radius: 15px;
+}
+.hotel-container {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+}
+.rating {
+  align-self: flex-end;
+}
+.hotel {
+  display: flex;
+}
+.img-hotel {
+  height: 140px;
+}
+fieldset {
+  border: 0 none;
+}
+form {
+  display: flex;
+  flex-direction: column;
+}
+.check-item {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+}
+fieldset {
+  display: block;
+}
+.choose-pref {
+  margin: 0 auto 10px auto;
+  font-size: 1.2rem;
+}
+.form-container {
+  padding: 20px;
+}
+.filter-button {
+  margin: 0 auto;
+}
+.filter-button {
+  padding: 7px 25px 7px 25px;
+  width: 100px;
+  border: 2px solid #FF8C00;
+  border-radius: 5px;
+  box-shadow: 0px 2px 5px 0px black;
+  background-color: #FFA500;
+}
+.filter-button:active {
+  border: 2px solid #FF8C00;
+  border-radius: 5px;
+  box-shadow: 0px 0px 0px black;
+  background-color: #FFA500;
+  margin-top: 3px;
+  color: white;
+  transition: box-shadow 0.1s, color 0.1s, margin-top 0.1s;
+  pointer-events: none;
+  outline: none !important;
+}
+.filter-button:hover {
+  color: white;
+}
+.filter-button:focus {
+  outline: none;
+}
