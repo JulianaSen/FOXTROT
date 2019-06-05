@@ -84,7 +84,7 @@ img {
 .navbar li {
   float: left;
 }
-ul {
+.navbar ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -96,19 +96,21 @@ li {
   float: left;
 }
 li a {
-  display: block;
   color: black;
   text-align: center;
-  padding: 14px 16px;
+  padding: 29px 16px;
   text-decoration: none;
 }
 .nav-cng {
   display: flex;
   justify-content: flex-end;
-  padding-right: 10px;
+  text-align: center;
+  align-items: center;
+  padding-right: 15px;
+  margin-top: 25px;
 }
 li a:hover {
-  background-color: #aeb7c4;
+  background-color: #9da6b5;
   cursor: pointer;
 }
 .nav-cng li a:hover {
@@ -134,7 +136,7 @@ li a {
   text-align: center;
   align-items: center;
   padding-right: 15px;
-  margin-top: 25px;
+  margin-top: 29px;
 }
 li:hover {
   cursor: pointer;
@@ -142,22 +144,28 @@ li:hover {
 }
 .rgt {
   position: relative;
-  width: 100%;
-  height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  align-items: flex-start;
+  justify-content: flex-start;
   overflow: hidden;
 }
 .rgt-form {
   padding-left: 400px;
 }
+.rgt-form ::placeholder {
+  color: black;
+  opacity: 0.8;
+}
 .rgt .text {
-  padding-left: 100px;
+  padding-left: 300px;
+  font-size: 70px;
+  font-family: 'Acme', sans-serif;
+  color: black;
+  margin-bottom: 10px;
 }
 .input-rgt {
-  opacity: 0.6;
+  opacity: 0.8;
   font-size: 20px;
 }
 #crt {
@@ -165,14 +173,16 @@ li:hover {
 }
 .input-rgt input {
   padding-left: 15px;
+  margin-top: 10px;
   height: 30px;
   width: 400px;
+  border-radius: 8px;
 }
 #btn {
   margin-left: 220px;
   border-radius: 12px;
   width: 200px;
-  height: 30px;
+  height: 40px;
 }
 #btn:hover {
   cursor: pointer;
@@ -260,4 +270,12 @@ li:hover {
 .tourists:hover .inform,
 .contacts:hover .inform {
   visibility: visible;
+}
+.rst {
+  background-image: url(../img/rst-background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
 }
