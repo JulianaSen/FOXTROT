@@ -1,13 +1,3 @@
-body {
-  font-family: 'Roboto Condensed', sans-serif;
-  background-image: url(../img/background.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: 100vw;
-  height: 90vh;
-  margin: 0;
-  padding: 0;
-}
 footer {
   background-color: black;
   color: white;
@@ -83,29 +73,54 @@ li a:hover {
   background-color: #9da6b5;
 }
 .rst {
-  background-image: url(../img/rst-background-2.jpg);
-}
-.rgt {
+  position: relative;
   width: 100%;
   height: 100vh;
   display: flex;
-  flex-direction: column;
+  align-items: center;
   justify-content: center;
-  align-items: flex-end;
-  color: white;
-  line-height: 2;
-  letter-spacing: 4px;
+  overflow: hidden;
 }
 .rgt-form {
-  padding-right: 40px;
+  padding-left: 400px;
 }
 .rgt .text {
-  padding-right: 40px;
+  padding-left: 100px;
 }
 .input-rgt {
   opacity: 0.6;
-  font-size: 30px;
+  font-size: 20px;
 }
 #crt {
   background-color: #9da6b5;
+}
+.input-rgt input {
+  padding-left: 15px;
+  height: 30px;
+  width: 400px;
+}
+#btn {
+  margin-left: 220px;
+  border-radius: 12px;
+  width: 200px;
+  height: 30px;
+}
+#btn:hover {
+  cursor: pointer;
+  background-color: #9da6b5;
+}
+.video-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.color-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: lightblue;
+  width: 100%;
+  height: 100vh;
+  opacity: 0.5;
 }
