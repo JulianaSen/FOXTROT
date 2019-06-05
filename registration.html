@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300i,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="rst">
+    <div class="video-container">
+        <div class="color-overlay">
+            <video autoplay loop muted>
+                <source src="../FOXTROT/video/video.mp4" type="video/mp4">
+            </video>
+        </div>
+    </div>
+
+    <header class="header">
+        <ul class="navbar">
+            <li><a href="../FOXTROT/index.html">
+                <img class="logo" src="img/around.png" alt="logo">
+            </a></li>
+            <div class="nav-cng">
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Sign in</a></li>
+                <li><a href="#" id="crt">Sign up</a></li>
+            </div>
+        </ul>
+    </header>
+
+    <section class="rgt">
+        <p class = "text">Create new account:</p>
+        <form class="rgt-form">
+            <div class="input-rgt">
+                <input type="text" name="username" placeholder="username">
+                <br>
+                <input type="email" name="email" placeholder="e-mail">
+                <br>
+                <input type="password" name="password" placeholder="password">
+                <br>
+                <input type="password" name="password-rpt" placeholder="repeat password">
+                <br>
+                <input id ="btn" type="submit" value="Register">
+            </div>
+        </form>
+    </section>
+</body>
+</html>
