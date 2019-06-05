@@ -4,7 +4,7 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     width: 100vw;
-    height: 100vh;
+    height: 90vh;
     margin: 0;
     padding: 0;
 }
@@ -63,7 +63,7 @@ img {
     border-radius: 50%;
 }
 
-
+@nav-color-hvr: #9da6b5;
 .navbar {
     list-style-type: none;
     margin: 0;
@@ -93,5 +93,38 @@ li a{
 
 li a:hover{
     cursor: pointer;
-    background-color: #9da6b5;
+    background-color: @nav-color-hvr;
 }
+
+.rst{
+    background-image: url(../img/rst-background-2.jpg)
+}
+
+.rgt{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    color: white;
+    line-height: 2;
+    letter-spacing: 4px;
+}
+
+.rgt-form{
+    padding-right: 40px;
+}
+
+.rgt .text{
+    padding-right: 40px;
+}
+
+.input-rgt{
+    opacity: 0.6;
+    font-size: 30px;
+}
+
+ #crt{
+     background-color: @nav-color-hvr;
+ }
