@@ -10,10 +10,19 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="rst">
-    
+    <div class="video-container">
+        <div class="color-overlay">
+            <video autoplay loop muted>
+                <source src="../FOXTROT/video/video.mp4" type="video/mp4">
+            </video>
+        </div>
+    </div>
+
     <header class="header">
         <ul class="navbar">
-            <li><a href="../FOXTROT/index.html">Lviv vacation</a></li>
+            <li><a href="../FOXTROT/index.html">
+                <img class="logo" src="img/around.png" alt="logo">
+            </a></li>
             <div class="nav-cng">
                 <li><a href="#">About us</a></li>
                 <li><a href="#">Sign in</a></li>
@@ -23,16 +32,7 @@
     </header>
 
     <section class="rgt">
-        <p class = "text">Create a new account</p>
-
-        <div class="video-container">
-            <div class="color-overlay">
-                <video autoplay loop muted>
-                    <source src="../FOXTROT/video/video.mp4" type="video/mp4">
-                </video>
-            </div>
-        </div>
-
+        <p class = "text">Create new account:</p>
         <form class="rgt-form">
             <div class="input-rgt">
                 <input type="text" name="username" placeholder="username">
