@@ -84,6 +84,33 @@ img {
 .navbar li {
   float: left;
 }
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: white;
+  opacity: 0.6;
+}
+li {
+  float: left;
+}
+li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.nav-cng {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 10px;
+}
+li a:hover {
+  background-color: #aeb7c4;
+  cursor: pointer;
+}
 .nav-cng li a:hover {
   height: 100%;
   cursor: pointer;
