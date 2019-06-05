@@ -1,13 +1,15 @@
 body {
   font-family: 'Roboto Condensed', sans-serif;
-  background-image: url(./фоон.jpg);
-  /* background-position: center center; */
+  background-image: url(../img/Lwów_-_Widok_z_wieży_ratuszowej_01.jpg);
   background-size: cover;
-  background-repeat: no-repeat;
-  width: 100vw;
+  background-attachment: fixed;
   height: 100vh;
   margin: 0;
   padding: 0;
+}
+main {
+  display: flex;
+  justify-content: center;
 }
 footer {
   background-color: black;
@@ -16,36 +18,40 @@ footer {
   text-align: center;
 }
 .img-hotel {
-  width: 200px;
+  width: 100%;
 }
 .wave-block {
   display: flex;
   justify-content: space-between;
   margin: 10px;
-  border: 1px solid gray;
-}
-.hotels-offers {
-  width: 60%;
+  max-width: 1151px;
 }
 .preferences {
-  height: 300px;
-  width: 30%;
+  width: 70%;
+  display: flex;
+  align-self: flex-start;
+  margin-right: 10px;
   border: 2px solid #f4a742;
   border-radius: 15px;
+  background-color: rgba(255, 255, 255, 0.6);
 }
 .hotel-container {
   display: flex;
   flex-direction: column;
-  width: 70%;
+  border: 2px solid #f4a742;
+  background-color: white;
+  padding: 10px;
+}
+.hotel-container:nth-child(2) {
+  margin-bottom: 10px;
+  margin-top: 10px;
 }
 .rating {
   align-self: flex-end;
+  font-size: 1.2em;
 }
 .hotel {
   display: flex;
-}
-.img-hotel {
-  height: 140px;
 }
 fieldset {
   border: 0 none;
@@ -53,11 +59,14 @@ fieldset {
 form {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
 }
 .check-item {
   display: flex;
   justify-content: space-between;
   margin: 10px;
+  user-select: none;
 }
 fieldset {
   display: block;
@@ -65,9 +74,12 @@ fieldset {
 .choose-pref {
   margin: 0 auto 10px auto;
   font-size: 1.2rem;
+  text-align: center;
 }
 .form-container {
   padding: 20px;
+  display: flex;
+  flex-direction: column;
 }
 .filter-button {
   margin: 0 auto;
@@ -78,7 +90,7 @@ fieldset {
   border: 2px solid #FF8C00;
   border-radius: 5px;
   box-shadow: 0px 2px 5px 0px black;
-  background-color: #FFA500;
+  background-color: #FE840E;
 }
 .filter-button:active {
   border: 2px solid #FF8C00;
@@ -96,4 +108,109 @@ fieldset {
 }
 .filter-button:focus {
   outline: none;
+}
+.form-preferences {
+  display: flex;
+  width: 100%;
+}
+label,
+[type="checkbox"] {
+  cursor: pointer;
+}
+.rating-star {
+  display: none;
+}
+.rating-star:checked + i {
+  color: red;
+}
+.rating-star:checked + i {
+  color: red;
+}
+i:hover {
+  color: red;
+}
+.nav-container {
+  display: none;
+}
+.container-img {
+  max-width: 80%;
+}
+.description {
+  display: flex;
+  flex-direction: column;
+  padding-left: 15px;
+  width: 100%;
+}
+.name-hotel {
+  align-self: center;
+}
+.servises {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+}
+@media screen and (max-width: 783px) {
+  .hotel {
+    display: flex;
+    flex-direction: column;
+  }
+  .container-img {
+    margin: 0 auto;
+  }
+  .img-hotel {
+    width: 100%;
+    height: auto;
+  }
+  .rating {
+    margin-bottom: 10px;
+  }
+  .description {
+    padding: 0;
+  }
+}
+@media screen and (max-width: 600px) {
+  .nav-container {
+    display: block;
+  }
+  .preferences {
+    display: none;
+  }
+  .hamburger {
+    display: none;
+  }
+  .nav-icon {
+    margin: 1em;
+    width: 40px;
+  }
+  .nav-icon:after,
+  .nav-icon:before,
+  .nav-icon div {
+    background-color: #fff;
+    border-radius: 3px;
+    content: '';
+    display: block;
+    height: 5px;
+    margin: 7px 0;
+    transition: all 0.2s ease-in-out;
+  }
+  .hamburger:checked + .nav-icon:before {
+    transform: translateY(12px) rotate(135deg);
+  }
+  .hamburger:checked + .nav-icon::after {
+    transform: translateY(-12px) rotate(-135deg);
+  }
+  .hamburger:checked + .nav-icon div {
+    transform: scale(0);
+  }
+  .nav-container {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-color: black;
+  }
+}
+@media screen and (max-width: 977px) {
+  .preferences {
+    min-width: 230px;
+  }
 }

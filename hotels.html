@@ -10,6 +10,14 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <div class="nav-container">
+      <label>
+        <input type="checkbox" class="hamburger">
+        <div class="nav-icon">
+          <div></div>
+        </div>
+      </label>
+    </div>
   <main>
     <div class="wave-block">
         <div class="preferences">
@@ -17,7 +25,7 @@
             <form action="">
               <div class="form-container">
                 <div class="check-item ">
-                  <legend class="choose-pref">Choose your preferences</legend>
+                  <legend class="choose-pref">Choose your preferences:</legend>
                 </div>
                 <div class="check-item" >
                   <label for="choose-all">Choose all</label> 
@@ -39,9 +47,10 @@
                   <label for="flat">Flat</label>  
                   <input type="checkbox" name="lastname" value="Mouse" id="flat">
                 </div>
-                <div class="check-item filter-button-container" >
-                  <input type="submit" value="Filter" class="filter-button">
-                </div>
+                
+              </div>
+              <div class="check-item filter-button-container" >
+                <input type="submit" value="Filter" class="filter-button">
               </div>
             </form>
           </div>
@@ -49,62 +58,95 @@
         <div class="hotels-offers">
           <div class="hotel-container">
             <div class="rating">
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
+              <label><input type="checkbox" class="rating-star"><i class="fa fa-star"></i></label>
+              <label><input type="checkbox" class="rating-star"><i class="fa fa-star"></i></label>
+              <label><input type="checkbox" class="rating-star"><i class="fa fa-star"></i></label>
+              <label><input type="checkbox" class="rating-star"><i class="fa fa-star"></i></label>
+              <label><input type="checkbox" class="rating-star"><i class="fa fa-star"></i></label>
             </div>
             <div class="hotel">
-              <div>
+              <div class="container-img">
                 <img class="img-hotel"  src="./img/107818054.jpg" alt="Hotel Urban">
               </div>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas repudiandae,
-                molestias aliquam distinctio neque necessitatibus quaerat perspiciatis ad
-                fugit deserunt a aperiam maiores
-                cum animi ullam. Consequatur in ut delectus.
-              </p>
+              <div class="description ">
+                <div class="name-hotel">
+                  <p>hotel number 1</p>
+                </div>
+                <div class="servises">
+                  <div>
+                    <p>Destination</p>
+                    <p>wifi</p>
+                    <p>smooking rm.</p>
+                  </div>
+                  <div>
+                    <p>street</p>
+                    <p>yes</p>
+                    <p>yes</p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
           <div class="hotel-container">
             <div class="rating">
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
+                <label><input type="checkbox" class="rating-star"><i class="fa fa-star"></i></label>
+                <label><input type="checkbox" class="rating-star"><i class="fa fa-star"></i></label>
+                <label><input type="checkbox" class="rating-star"><i class="fa fa-star"></i></label>
+                <label><input type="checkbox" class="rating-star"><i class="fa fa-star"></i></label>
+                <label><input type="checkbox" class="rating-star"><i class="fa fa-star"></i></label>
             </div>
             <div class="hotel">
-              <div>
+              <div class="container-img">
                 <img class="img-hotel" src="./img/61322849.jpg" alt="Hotel Ukraine">
               </div>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas repudiandae,
-                molestias aliquam distinctio neque necessitatibus quaerat perspiciatis ad
-                fugit deserunt a aperiam maiores
-                cum animi ullam. Consequatur in ut delectus.
-              </p>
+              <div class="description ">
+                <div class="name-hotel">
+                  <p>hotel number 1</p>
+                </div>
+                <div class="servises">
+                  <div>
+                    <p>Destination</p>
+                    <p>wifi</p>
+                    <p>smooking rm.</p>
+                  </div>
+                  <div>
+                    <p>street</p>
+                    <p>yes</p>
+                    <p>yes</p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
           <div class="hotel-container">
             <div class="rating">
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
+                <label><input type="checkbox" class="rating-star"><i class="fa fa-star"></i></label>
+                <label><input type="checkbox" class="rating-star"><i class="fa fa-star"></i></label>
+                <label><input type="checkbox" class="rating-star"><i class="fa fa-star"></i></label>
+                <label><input type="checkbox" class="rating-star"><i class="fa fa-star"></i></label>
+                <label><input type="checkbox" class="rating-star"><i class="fa fa-star"></i></label>
             </div>
             <div class="hotel">
-              <div>
+              <div class="container-img ">
                 <img class="img-hotel" src="./img/double2-slide.jpg" alt="Hotel Ukraine">
               </div>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas repudiandae,
-                molestias aliquam distinctio neque necessitatibus quaerat perspiciatis ad
-                fugit deserunt a aperiam maiores
-                cum animi ullam. Consequatur in ut delectus.
-              </p>
+              <div class="description ">
+                  <div class="name-hotel">
+                    <p>hotel number 1</p>
+                  </div>
+                  <div class="servises">
+                    <div>
+                      <p>Destination</p>
+                      <p>wifi</p>
+                      <p>smooking rm.</p>
+                    </div>
+                    <div>
+                      <p>street</p>
+                      <p>yes</p>
+                      <p>yes</p>
+                    </div>
+                  </div>
+                </div>
             </div>
           </div>
         </div>
