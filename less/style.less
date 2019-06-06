@@ -1,11 +1,14 @@
 .index, .about, .rst {
     font-family: 'Acme', sans-serif;
-    background-image: url(../img/rst-background.jpg);
     background-repeat: no-repeat;
-    background-size: cover; 
     width: 100%;
     height: 100vh;
     overflow: hidden;
+}
+
+.rst, .about {
+    background-image: url(../img/rst-background.jpg);
+    background-size:cover;
 }
 
 
@@ -216,11 +219,10 @@ img {
     top: 0;
     left: 0;
     right: 0;
-    width: 100%;
 }
 
 .color-overlay{
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     right: 0;
@@ -228,7 +230,6 @@ img {
     width: 100%;
     height: 100vh;
     opacity: 0.5;
-    background-color: @nav-color-hvr;
 }
 
 // about page
@@ -321,4 +322,13 @@ img {
     display: flex;
     flex-direction: column;
     padding: 0;
+}
+
+@media only screen and (max-width: 500px) {
+    .navbar {
+        display: block;
+    }
+    .nav-cng {
+        display: none;
+    }
 }
