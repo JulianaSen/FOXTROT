@@ -1,6 +1,6 @@
 body {
-    font-family: 'Roboto Condensed', sans-serif;
-    background-image: url(../img/Lwów_-_Widok_z_wieży_ratuszowej_01.jpg);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #f3f3f3;
     background-size: cover;
     background-attachment: fixed;
     height: 100vh;
@@ -37,21 +37,24 @@ footer {
     display: flex;
     align-self: flex-start;
     margin-right: 10px;
-    border: 2px solid black;
+    // border: 2px solid black;
+    box-shadow: 10px 10px 7px -8px rgba(143,143,143,1);
     border-radius: 15px;
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: white;
 }
 
 .hotel-container {
     display: flex;
     flex-direction: column;
-    border: 2px solid black;
+    box-shadow: 10px 10px 7px -8px rgba(143,143,143,1);
+    // border: 2px solid black;
+    border-radius: 12px;
     background-color: white;
     padding: 10px;
 
     &:nth-child(2) {
-        margin-bottom: 10px;
-        margin-top: 10px;
+        margin-bottom: 20px;
+        margin-top: 20px;
     }
 }
 
@@ -101,6 +104,7 @@ fieldset {
 
 .filter-button {
     margin: 0 auto;
+    color: white;
     width: 150px;
     padding: 5px;
     text-align: center;
@@ -109,6 +113,7 @@ fieldset {
     border-top: 0px solid #fff; /*define the color of the upper border */
     border-bottom: 3px solid #666;
     border-radius: 2px;
+    background-color: black;
 }
 
 .filter-button:active {
@@ -147,9 +152,16 @@ label, [type="checkbox"] {
     color: yellow;
 }
 
-i:hover {
+i.fa-star:hover,  {
     color: yellow;
 }
+
+
+.fa-wifi, .fa-map-marker {
+    color: rgb(41, 41, 248);
+}
+
+
 
 .nav-container {
     display: none;
@@ -158,6 +170,7 @@ i:hover {
 .container-img {
     align-self: center;
     width: 95%;
+    height: 100%;
 }
 
 .description {
@@ -188,6 +201,7 @@ i:hover {
     
 // }
 //-----fixed
+
 @media screen and (max-width: 783px) {
 
     .hotel {
