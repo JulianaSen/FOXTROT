@@ -176,7 +176,7 @@ i:hover {
   text-align: center;
 }
 .container-img {
-  background-image: url(/restaurants/img/rest1.jpg);
+  /* background-image: url(/restaurants/img/rest1.jpg); */
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
