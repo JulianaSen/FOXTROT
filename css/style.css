@@ -42,17 +42,24 @@
   opacity: 0.6;
   font-size: 30px;
 }
-.btn {
+.btn,
+.filter-button {
   border-radius: 8px;
   padding: 10px;
 }
-.btn:hover {
+.btn:hover,
+.filter-button:hover {
   background-color: #9da6b5;
   cursor: pointer;
   opacity: 1;
 }
-img {
-  height: 80px;
+.filter-button {
+  margin: 0 auto;
+  width: 150px;
+  padding: 8px;
+  text-align: center;
+  opacity: 0.7;
+  background-color: #d8d8da;
 }
 .images {
   height: 80px;
@@ -62,6 +69,9 @@ img {
   border-radius: 50%;
   padding: 40px;
   margin: 40px;
+}
+.images img {
+  height: 80px;
 }
 .images:hover {
   background-color: #9da6b5;
@@ -540,19 +550,6 @@ fieldset {
   padding: 20px;
   display: flex;
   flex-direction: column;
-}
-.filter-button {
-  margin: 0 auto;
-  color: white;
-  width: 150px;
-  padding: 5px;
-  text-align: center;
-  opacity: 0.7;
-  border-top: 0px solid #fff;
-  /*define the color of the upper border */
-  border-bottom: 3px solid #666;
-  border-radius: 2px;
-  background-color: black;
 }
 .filter-button:active {
   outline: none !important;
