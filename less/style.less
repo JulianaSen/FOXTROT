@@ -565,11 +565,10 @@ footer {
     display: flex;
     justify-content: space-between;
     margin: 10px;
-    max-width: 1151px;
 }
 
 .preferences {
-    width: 50%;
+    // width: 50%;
     display: flex;
     align-self: flex-start;
     margin-right: 10px;
@@ -587,7 +586,7 @@ footer {
     border-radius: 12px;
     background-color: white;
     padding: 10px;
-
+   
     &:nth-child(2) {
         margin-bottom: 20px;
         margin-top: 20px;
@@ -683,6 +682,10 @@ i.fa-star:hover  {
     color: rgb(41, 41, 248);
 }
 
+.fa-check-circle {
+   color: #28a745;
+}
+
 .nav-container {
     display: none;
 }
@@ -692,6 +695,55 @@ i.fa-star:hover  {
     width: 95%;
     height: 100%;
 }
+
+.additional-information {
+    opacity: 0;
+    margin: 0;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .additional-information p {
+    padding: 30px;
+    line-height: 1.3em;
+    text-align: center;
+  }
+  .container-img {
+    // background-image: url(../img/rest1.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    // max-width: 400px;
+    height: 250px;
+  }
+
+  .container-img-hotels {
+    background-image: url(../img/double2-slide.jpg);
+  }
+
+  .container-img-restaurants {
+    background-image: url(../img/rest1.jpg);
+  }
+  .container-img:hover > .additional-information {
+    opacity: 1;
+    transition: opacity 0.5s linear;
+    height: 100%;
+    background-color: black;
+    opacity: 0.7;
+  }
+
+  .container-img-rest-one {
+    background-image: url(/img/cinema.jpg)
+  }
+
+  .container-img-rest-two {
+    background-image: url(/img/LvivOperaTheater-2b.jpg)
+  }
+
+  .container-img-rest-three {
+    background-image: url(/img/stadion.jpg)
+  }
 
 .description {
     display: flex;
@@ -751,6 +803,7 @@ i.fa-star:hover  {
 @media screen and (max-width: 600px) { 
     .nav-container {
         display: block;
+        padding-bottom: 20px;
     }
 
     .preferences {
@@ -808,8 +861,8 @@ i.fa-star:hover  {
         min-width: auto;
     }
 
-    main {
-        margin-top: 400px;
+    .main-container {
+        margin-top: 420px;
     }
 }
 

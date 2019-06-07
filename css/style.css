@@ -497,10 +497,8 @@ footer {
   display: flex;
   justify-content: space-between;
   margin: 10px;
-  max-width: 1151px;
 }
 .preferences {
-  width: 50%;
   display: flex;
   align-self: flex-start;
   margin-right: 10px;
@@ -591,6 +589,9 @@ i.fa-star:hover {
 .fa-map-marker {
   color: #2929f8;
 }
+.fa-check-circle {
+  color: #28a745;
+}
 .nav-container {
   display: none;
 }
@@ -598,6 +599,47 @@ i.fa-star:hover {
   align-self: center;
   width: 95%;
   height: 100%;
+}
+.additional-information {
+  opacity: 0;
+  margin: 0;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.additional-information p {
+  padding: 30px;
+  line-height: 1.3em;
+  text-align: center;
+}
+.container-img {
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 250px;
+}
+.container-img-hotels {
+  background-image: url(../img/double2-slide.jpg);
+}
+.container-img-restaurants {
+  background-image: url(../img/rest1.jpg);
+}
+.container-img:hover > .additional-information {
+  opacity: 1;
+  transition: opacity 0.5s linear;
+  height: 100%;
+  background-color: black;
+  opacity: 0.7;
+}
+.container-img-rest-one {
+  background-image: url(/img/cinema.jpg);
+}
+.container-img-rest-two {
+  background-image: url(/img/LvivOperaTheater-2b.jpg);
+}
+.container-img-rest-three {
+  background-image: url(/img/stadion.jpg);
 }
 .description {
   display: flex;
@@ -636,6 +678,7 @@ i.fa-star:hover {
 @media screen and (max-width: 600px) {
   .nav-container {
     display: block;
+    padding-bottom: 20px;
   }
   .preferences {
     display: none;
@@ -682,8 +725,8 @@ i.fa-star:hover {
   .preferences.small-screen {
     min-width: auto;
   }
-  main {
-    margin-top: 400px;
+  .main-container {
+    margin-top: 420px;
   }
 }
 @media screen and (max-width: 977px) {
