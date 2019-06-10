@@ -850,8 +850,10 @@ i.fa-star:hover {
   .nav-icon {
     margin: 1em;
     width: 35px;
-    position: relative;
-    left: 75vw;
+  }
+  .burger-cont {
+    display: flex;
+    justify-content: space-between;
   }
   .nav-icon:after,
   .nav-icon:before,
@@ -888,7 +890,7 @@ i.fa-star:hover {
     max-width: 60%;
   }
   .main-container {
-    margin-top: 320px;
+    margin-top: 370px;
   }
 }
 @media screen and (max-width: 977px) {
