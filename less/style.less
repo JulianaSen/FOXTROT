@@ -634,10 +634,35 @@ form {
 
 .check-item {
     display: flex;
+    flex-direction: row-reverse;
     justify-content: space-between;
     margin: 10px;
     user-select: none; 
+    
 }
+
+input[type=checkbox], input[type=radio] {display: none;}
+
+// input[type=checkbox] + label:before {
+//     content: "\2713";
+//     color: transparent;
+//     display: inline-block;
+//     border: 1px solid #000;
+//     font-size: 20px;    
+//     line-height: 22px;
+//     margin: -5px 5px 0 0;
+//     height: 20px;
+//     width: 20px;
+//     text-align: center;
+//     vertical-align: middle;
+//     transition: color ease .3s;
+// }
+
+// input[type=checkbox]:checked + label:before {
+//     color: #000;
+// }
+
+
 
 fieldset {
     display: block;

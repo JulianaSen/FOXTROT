@@ -547,9 +547,14 @@ form {
 }
 .check-item {
   display: flex;
+  flex-direction: row-reverse;
   justify-content: space-between;
   margin: 10px;
   user-select: none;
+}
+input[type=checkbox],
+input[type=radio] {
+  display: none;
 }
 fieldset {
   display: block;
