@@ -171,7 +171,7 @@
   margin-bottom: 10px;
 }
 .input-rgt {
-  opacity: 0.8;
+  opacity: 0.7;
   font-size: 20px;
 }
 .input-rgt input {
@@ -189,6 +189,7 @@
   border-radius: 12px;
   width: 200px;
   height: 30px;
+  background-color: white;
 }
 #btn:hover {
   cursor: pointer;
