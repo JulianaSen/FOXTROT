@@ -931,3 +931,108 @@ i.fa-star:hover {
     font-size: 1.6rem;
   }
 }
+@media screen and (max-width: 977px) {
+  .preferences {
+    min-width: 230px;
+  }
+}
+@media screen and (max-height: 740px) and (max-width: 1000px) and (min-width: 800px) {
+  .choice {
+    margin-top: 60px;
+  }
+  .textBudget {
+    font-size: 40px;
+  }
+  .input_budget {
+    margin-top: 50px;
+    padding: 7px;
+  }
+  .btn {
+    padding: 7px;
+  }
+  .input {
+    font-size: 25px;
+  }
+  .textAct {
+    font-size: 60px;
+  }
+  .images {
+    padding: 20px;
+    margin: 15px;
+    margin-left: 50px;
+  }
+}
+@media screen and (width: 768px) and (height: 1024px) {
+  .input {
+    margin-top: 90px;
+  }
+  .textAct {
+    padding: 15px;
+    line-height: 1.5;
+    text-align: center;
+  }
+  .textBudget {
+    padding-left: 30px;
+    padding-right: 30px;
+    text-align: center;
+    line-height: 1.2;
+  }
+}
+@media screen and (width: 1024px) and (height: 1366px) {
+  .video-container {
+    min-height: 100%;
+  }
+  .textBudget {
+    font-size: 80px;
+    text-align: center;
+  }
+  .input {
+    font-size: 50px;
+    margin-top: 90px;
+  }
+  .choice {
+    line-height: 1.7;
+  }
+  .textAct {
+    font-size: 100px;
+    margin-top: 100px;
+  }
+  .images {
+    padding: 70px;
+    margin-top: 90px;
+  }
+  .images img {
+    height: 100px;
+    width: 100px;
+  }
+  .navbar {
+    font-size: 30px;
+  }
+  .logo {
+    height: 70px;
+    width: 70px;
+  }
+  .nav-cng {
+    margin-top: 35px;
+  }
+}
+@media screen and (max-height: 610px) and (max-width: 1000px) and (min-width: 800px) {
+  .choice {
+    margin-top: 10px;
+  }
+  .input {
+    font-size: 15px;
+  }
+  .input_budget {
+    width: 250px;
+  }
+  .textBudget {
+    font-size: 30px;
+  }
+  .textAct {
+    font-size: 40px;
+  }
+  .images {
+    padding: 10px;
+  }
+}
